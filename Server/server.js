@@ -13,6 +13,8 @@ app.get('/', (req, res) => {
 
 app.use('/user', userRouter);
 
+app.use('/form', formRouter);
+
 app.listen(PORT, (req, res) => {
   console.log('Listening on PORT ' + PORT);
 });
